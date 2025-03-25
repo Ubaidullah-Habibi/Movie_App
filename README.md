@@ -15,6 +15,7 @@ This Application will let the users to search for movies and view detailed infor
 * View Binding: Simplifies UI interactions.
 
 * OkHttp & Gson: For network communication and JSON parsing.
+  
 
   
  # Project Structure :
