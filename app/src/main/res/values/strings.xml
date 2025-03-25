@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Movie Hub</string>
+    <string name="search">Search</string>
+    <string name="empty_text">Search Your Favorite Movies ♥</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="year">Year</string>
+    <string name="runtime">Runtime</string>
+    <string name="title">Movie Details</string>
+    <string name="back">Back</string>
+    <string name="rated">Rated</string>
+    <string name="connect_now">Connect Now</string>
+    <string name="internet_not_available">Internet Not Available</string>
+    <string name="please_check_your_internet_connection">Please Check your internet connection</string>
+    <string name="exit">Exit</string>
+    <string name="are_you_sure_you_want_to_exit_the_app">Are you sure you want to exit the app?</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_movies_">Search Movies…</string>
+    <string name="search_movies">Search Movies</string>
+    <string name="kindly_enter_some_movie_name_to_search">Kindly enter some movie name to search.</string>
+    <string name="movie_detail">Movie Detail</string>
+    <string name="fetching_movie_detail">Fetching Movie Detail...</string>
+    <string name="searching_movies">Searching Movies...</string>
+</resources>

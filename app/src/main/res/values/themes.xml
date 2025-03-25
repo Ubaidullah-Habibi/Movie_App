@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MovieApp" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorSurface">@color/bg_color</item> <!-- Forces Dark Background -->
+        <item name="colorOnSurface">@color/fg_color</item> <!-- White Text -->
+    </style>
+
+    <style name="Theme.MovieApp" parent="Base.Theme.MovieApp" />
+
+    <style name="DarkSearchTheme" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="colorSurface">@color/bg_color</item>  <!-- Dark Background -->
+        <item name="colorOnSurface">@color/fg_color</item>
+    </style>
+    <style name="RoundedCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_12sdp</item>
+    </style>
+</resources>

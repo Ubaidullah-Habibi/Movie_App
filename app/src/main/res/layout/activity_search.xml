@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".view.search.SearchActivity">
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbarSearch"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/searchLayout"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbarSearch"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/cvSearch"
+            layout="@layout/text_search_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"
+            android:id="@+id/btnSearch"
+            android:elevation="@dimen/_1sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/baseline_search_24"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_25sdp"
+        android:id="@+id/layoutProgress"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/searchLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ProgressBar
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:indeterminateTint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:gravity="center"
+            android:id="@+id/tvLoading"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="@string/searching_movies"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearchResults"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_movie"
+        android:paddingStart="@dimen/_8sdp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchLayout"
+        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible"
+        android:id="@+id/search_empty_state"
+        android:layout_marginTop="@dimen/_60sdp"
+        app:layout_constraintTop_toBottomOf="@id/searchLayout"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:contentDescription="@string/empty_text"
+            android:src="@drawable/img_search_movies" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

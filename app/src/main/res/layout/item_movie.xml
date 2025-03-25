@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_12sdp"
+    android:background="@drawable/item_bg">
+        <!-- Movie Poster -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/card_bg"
+            app:shapeAppearanceOverlay="@style/RoundedCorner"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/movie_poster" />
+        <!-- Movie Title -->
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Movie Title"
+            android:maxLines="2"
+            android:ellipsize="end" />
+            <TextView
+                android:id="@+id/movieYear"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Year: 2021"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"/>
+</LinearLayout>
