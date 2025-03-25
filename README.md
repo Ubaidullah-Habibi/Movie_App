@@ -2,6 +2,7 @@
 
 This Application will let the users to search for movies and view detailed information. The app is built using Kotlin and follows the MVVM (Model-View-ViewModel) architecture for better maintainability and scalability.
 
+
 # Features of the Application :
 
 * Movie Search: Search for movies by name using the OMDb API.
